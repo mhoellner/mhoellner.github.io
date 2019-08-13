@@ -26,6 +26,8 @@ markdown: kramdown
 theme: minima #jekyll-theme-cayman
 plugins:
   - jekyll-feed
+  - jekyll-mentions
+  - jemoji
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
