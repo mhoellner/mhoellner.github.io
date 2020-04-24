@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Milan Höllner">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+        <title>
+            {{ page.title }}
+        </title>
+        <style>
+            .svg-icon {
+                width: 10%;
+                height: 10%;
+            }
+
+            .social-media-list > li {
+                display: list-item inline;
+            }
+
+            .skills > li {
+                list-style-type: none;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="page-content" aria-label="Content">
+            <div class="wrapper">
+                {{ content }}
+            </div>
+            <div class="wrapper">
+                <h3>
+                    Links
+                </h3>
+                <ul class="social-media-list">
+                    <li>
+                        <a rel="me" href="https://github.com/{{ site.github_username | cgi_escape | escape }}" title="@{{ site.github_username | escape }} on Github">
+                            <svg class="svg-icon grey" viewBox="0 0 20 20">
+                                <use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a rel="me" href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}" title="@{{ site.twitter_username | escape }} on Twitter">
+                            <svg class="svg-icon grey" viewBox="0 0 20 20">
+                                <use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper">
+                <h3>
+                    Skills
+                </h3>
+                <ul class="skills">
+                    <li>
+                        C# / .NET Framework / .NET Core / ASP.NET MVC
+                    </li>
+                    <li>
+                        Sitecore Experience Platform
+                    </li>
+                    <li>
+                        Sitecore Experience Commerce
+                    </li>
+                    <li>
+                        Git
+                    </li>
+                    <li>
+                        Continuous Integration (Jetbrains TeamCity)
+                    </li>
+                    <li>
+                        Continuous Deployment (Octopus Deploy)
+                    </li>
+                    <li>
+                        Docker / Docker Compose
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>
