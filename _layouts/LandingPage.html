@@ -1,82 +1,88 @@
 <!DOCTYPE html>
 <html lang="de-DE">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Milan Höllner">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-        <title>
-            {{ page.title }}
-        </title>
-        <style>
-            .svg-icon {
-                width: 10%;
-                height: 10%;
-            }
 
-            .social-media-list > li {
-                display: list-item inline;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Milan Höllner">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/custom.css" | relative_url }}">
+    <link rel="stylesheet" href="/assets/vendors/@fortawesome/css/all.css">
+    <title>
+        {{ page.title }}
+    </title>
+</head>
 
-            .skills > li {
-                list-style-type: none;
-            }
-        </style>
-    </head>
-    <body>
-        <main class="page-content" aria-label="Content">
-            <div class="wrapper">
+<body>
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+            <center>
                 {{ content }}
-            </div>
-            <div class="wrapper">
-                <h3>
-                    Links
-                </h3>
+            </center>
+        </div>
+        <div class="wrapper">
+            <center>
                 <ul class="social-media-list">
                     <li>
-                        <a rel="me" href="https://github.com/{{ site.github_username | cgi_escape | escape }}" title="@{{ site.github_username | escape }} on Github">
-                            <svg class="svg-icon grey" viewBox="0 0 20 20">
-                                <use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use>
-                            </svg>
+                        <a rel="me" href="https://github.com/{{ site.github_username | cgi_escape | escape }}"
+                            title="@{{ site.github_username | escape }} on Github">
+                            <i class="fab fa-github fa-5x"></i>
                         </a>
                     </li>
                     <li>
-                        <a rel="me" href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}" title="@{{ site.twitter_username | escape }} on Twitter">
-                            <svg class="svg-icon grey" viewBox="0 0 20 20">
-                                <use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use>
-                            </svg>
+                        <a rel="me" href="https://gitlab.com/{{ site.gitlab_username | cgi_escape | escape }}"
+                            title="@{{ site.gitlab_username | escape }} on Gitlab">
+                            <i class="fab fa-gitlab fa-5x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a rel="me" href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}"
+                            title="@{{ site.twitter_username | escape }} on Twitter">
+                            <i class="fab fa-twitter fa-5x"></i>
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div class="wrapper">
-                <h3>
+            </center>
+        </div>
+        <div class="wrapper">
+            <center>
+                <h2>
+                    <i class="fa fa-tools"></i>
                     Skills
-                </h3>
-                <ul class="skills">
-                    <li>
-                        C# / .NET Framework / .NET Core / ASP.NET MVC
-                    </li>
-                    <li>
-                        Sitecore Experience Platform
-                    </li>
-                    <li>
-                        Sitecore Experience Commerce
-                    </li>
-                    <li>
-                        Git
-                    </li>
-                    <li>
-                        Continuous Integration (Jetbrains TeamCity)
-                    </li>
-                    <li>
-                        Continuous Deployment (Octopus Deploy)
-                    </li>
-                    <li>
-                        Docker / Docker Compose
-                    </li>
-                </ul>
-            </div>
-        </main>
-    </body>
+                </h2>
+            </center>
+            <ul class="skill-list">
+                <li>
+                    <i class="fa fa-code fa-fw"></i>
+                    C# / .NET Framework / .NET Core / ASP.NET MVC
+                </li>
+                <li>
+                    <i class="fa fa-code fa-fw"></i>
+                    Sitecore Experience Platform
+                </li>
+                <li>
+                    <i class="fa fa-code fa-fw"></i>
+                    Sitecore Experience Commerce
+                </li>
+                <li>
+                    <i class="fab fa-git-alt fa-fw"></i>
+                    Git
+                </li>
+                <li>
+                    <i class="fa fa-terminal fa-fw"></i>
+                    Continuous Integration (Jetbrains TeamCity)
+                </li>
+                <li>
+                    <i class="fa fa-box fa-fw"></i>
+                    Continuous Deployment (Octopus Deploy)
+                </li>
+                <li>
+                    <i class="fab fa-docker fa-fw"></i>
+                    Docker / Docker Compose
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+
 </html>

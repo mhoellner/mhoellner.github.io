@@ -1,0 +1,17 @@
+.social-media-list > a, a:visited {
+    color: black;
+}
+
+.social-media-list > li {
+    display: list-item inline;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.skill-list {
+    padding: auto;
+}
+
+.skill-list > li {
+    list-style-type: none;
+}
