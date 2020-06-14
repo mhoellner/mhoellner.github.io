@@ -43,13 +43,59 @@
 
 /* ---- MAIN ---- */
 
-.paper {
-    border-radius: 5px;
-    border: grey 1px solid;
+.paper-navigation {
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+    font-size: larger;
 }
 
-.skill-list > li {
-    list-style-type: none;
+.navigation-link::before {
+    content: "[\00a0";
+}
+
+.navigation-link::after {
+    content: "\00a0]";
+}
+
+.paper-content {
+    padding: 5px;
+}
+
+.skill-list, .career-element, .certificate-list, .project-list {
+    padding-left: 2.5em;
+}
+
+.career-element:not(:last-child), .certificate:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.career-element_date, .certificate_date {
+    color: darkslategrey;
+    font-style: italic;
+}
+
+.career-element_title, .certificate_title, .project_title {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.project {
+    width: 50%;
+    padding: 5px;
+}
+
+.project:hover {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.navigation-link:hover, .career-element_place > a:hover, .project__link:hover {
+    background-color: black;
+    color: white;
+    text-decoration: unset;
 }
 
 /* ---- DEFAULT ---- */
