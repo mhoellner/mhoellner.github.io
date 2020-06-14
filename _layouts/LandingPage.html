@@ -14,75 +14,124 @@
 </head>
 
 <body>
-    <main class="page-content" aria-label="Content">
-        <div class="wrapper">
-            <center>
-                {{ content }}
-            </center>
+    <div class="header">
+        <div class="container">
+            <img class="avatar" src="/assets/img/git-selfie.jpg">
         </div>
-        <div class="wrapper">
-            <center>
-                <ul class="social-media-list">
-                    <li>
-                        <a rel="me" href="https://github.com/{{ site.github_username | cgi_escape | escape }}"
-                            title="@{{ site.github_username | escape }} on Github">
-                            <i class="fab fa-github fa-5x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a rel="me" href="https://gitlab.com/{{ site.gitlab_username | cgi_escape | escape }}"
-                            title="@{{ site.gitlab_username | escape }} on Gitlab">
-                            <i class="fab fa-gitlab fa-5x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a rel="me" href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}"
-                            title="@{{ site.twitter_username | escape }} on Twitter">
-                            <i class="fab fa-twitter fa-5x"></i>
-                        </a>
-                    </li>
-                </ul>
-            </center>
+        <div class="container">
+            <h1 class="name">
+                Milan Höllner
+            </h1>
         </div>
-        <div class="wrapper">
-            <center>
-                <h2>
-                    <i class="fa fa-tools"></i>
-                    Skills
-                </h2>
-            </center>
-            <ul class="skill-list">
-                <li>
-                    <i class="fa fa-code fa-fw"></i>
-                    C# / .NET Framework / .NET Core / ASP.NET MVC
+        <div class="container">
+            <ul class="interests">
+                <li class="interests__item">
+                    Backend Developer
                 </li>
-                <li>
-                    <i class="fa fa-code fa-fw"></i>
-                    Sitecore Experience Platform
+                <li class="interests__item">
+                    Feminist
                 </li>
-                <li>
-                    <i class="fa fa-code fa-fw"></i>
-                    Sitecore Experience Commerce
+                <li class="interests__item">
+                    Maker
                 </li>
-                <li>
-                    <i class="fab fa-git-alt fa-fw"></i>
-                    Git
-                </li>
-                <li>
-                    <i class="fa fa-terminal fa-fw"></i>
-                    Continuous Integration (Jetbrains TeamCity)
-                </li>
-                <li>
-                    <i class="fa fa-box fa-fw"></i>
-                    Continuous Deployment (Octopus Deploy)
-                </li>
-                <li>
-                    <i class="fab fa-docker fa-fw"></i>
-                    Docker / Docker Compose
+                <li class="interests__item">
+                    Climate Justice
                 </li>
             </ul>
         </div>
-    </main>
+        <div class="container">
+            <ul class="social-links">
+                <li class="social-links__item">
+                    <a rel="me" href="https://github.com/{{ site.github_username | cgi_escape | escape }}"
+                        title="@{{ site.github_username | escape }} on Github">
+                        <i class="fab fa-github fa-5x"></i>
+                    </a>
+                </li>
+                <li class="social-links__item">
+                    <a rel="me" href="https://gitlab.com/{{ site.gitlab_username | cgi_escape | escape }}"
+                        title="@{{ site.gitlab_username | escape }} on Gitlab">
+                        <i class="fab fa-gitlab fa-5x"></i>
+                    </a>
+                </li>
+                <li class="social-links__item">
+                    <a rel="me" href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}"
+                        title="@{{ site.twitter_username | escape }} on Twitter">
+                        <i class="fab fa-twitter fa-5x"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <div class="paper">
+                <div class="paper-navigation">
+                    <a href="#skills">Skills</a>
+                    <a href="#career">Career</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#certificates">Certificates</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="paper-content">
+                    <h2 id="skills">
+                        <i class="fa fa-tools"></i>
+                        Skills
+                    </h2>
+                    <ul class="skill-list">
+                        <li>
+                            <i class="fa fa-code fa-fw"></i>
+                            C# / .NET Framework / .NET Core / ASP.NET MVC
+                        </li>
+                        <li>
+                            <i class="fa fa-code fa-fw"></i>
+                            Sitecore Experience Platform
+                        </li>
+                        <li>
+                            <i class="fa fa-code fa-fw"></i>
+                            Sitecore Experience Commerce
+                        </li>
+                        <li>
+                            <i class="fab fa-git-alt fa-fw"></i>
+                            Git
+                        </li>
+                        <li>
+                            <i class="fa fa-terminal fa-fw"></i>
+                            Continuous Integration (Jetbrains TeamCity)
+                        </li>
+                        <li>
+                            <i class="fa fa-box fa-fw"></i>
+                            Continuous Deployment (Octopus Deploy)
+                        </li>
+                        <li>
+                            <i class="fab fa-docker fa-fw"></i>
+                            Docker / Docker Compose
+                        </li>
+                    </ul>
+                </div>
+                <div class="paper-content">
+                    <h2 id="career">
+                        Career
+                    </h2>
+                </div>
+                <div class="paper-content">
+                    <h2 id="projects">
+                        Projects
+                    </h2>
+                </div>
+                <div class="paper-content">
+                    <h2 id="certificates">
+                        Certificates
+                    </h2>
+                </div>
+                <div class="paper-content">
+                    <h2 id="contact">
+                        Contact
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

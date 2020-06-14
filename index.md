@@ -5,6 +5,3 @@
 layout: LandingPage
 title: Milan
 ---
-# Hallo, ich bin Milan Höllner
-
-## Ich arbeite derzeit als Backend Software Developer
