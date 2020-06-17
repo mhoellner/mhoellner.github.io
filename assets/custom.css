@@ -30,7 +30,7 @@
     text-align: center;
 }
 
-.social-links__item > a, a:visited {
+.social-links__item > a, a, a:visited {
     color: black;
 }
 
@@ -39,6 +39,18 @@
     display: list-item inline;
     padding-left: 1rem;
     padding-right: 1rem;
+    font-size: 5em;
+}
+
+.social-links__item > a:hover > i {
+    background-color: black;
+    color: white;
+    text-decoration: unset;
+    border-radius: 3px;
+}
+
+.social-links__item > a:hover {
+    text-decoration: unset;
 }
 
 /* ---- MAIN ---- */
@@ -64,20 +76,28 @@
     padding: 5px;
 }
 
-.skill-list, .career-element, .certificate-list, .project-list {
+.skill-list,
+.career-element,
+.certificate-list,
+.project-list,
+.contact-list {
     padding-left: 2.5em;
 }
 
-.career-element:not(:last-child), .certificate:not(:last-child) {
+.career-element:not(:last-child),
+.certificate:not(:last-child) {
     margin-bottom: 15px;
 }
 
-.career-element_date, .certificate_date {
+.career-element_date,
+.certificate_date {
     color: darkslategrey;
     font-style: italic;
 }
 
-.career-element_title, .certificate_title, .project_title {
+.career-element_title,
+.certificate_title,
+.project_title {
     font-size: larger;
     font-weight: bold;
 }
@@ -85,13 +105,15 @@
 .project {
     width: 50%;
 }
+
 .project_title,
 .project_description {
     padding: 0px 5px 5px 5px;
 }
 
 .navigation-link:hover,
-.career-element_place > a:hover {
+.career-element_place > a:hover,
+.contact_link:hover {
     background-color: black;
     color: white;
     text-decoration: unset;
