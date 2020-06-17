@@ -84,18 +84,33 @@
 
 .project {
     width: 50%;
-    padding: 5px;
+}
+.project_title,
+.project_description {
+    padding: 0px 5px 5px 5px;
 }
 
-.project:hover {
-    background-color: black;
-    border-radius: 5px;
-}
-
-.navigation-link:hover, .career-element_place > a:hover, .project__link:hover {
+.navigation-link:hover,
+.career-element_place > a:hover {
     background-color: black;
     color: white;
     text-decoration: unset;
+}
+
+.project__link:hover > .project_title,
+.project__link:hover > .project_description {
+    background-color: black;
+    color: white;
+    text-decoration: unset;
+}
+
+.project {
+    border: 1px solid transparent;
+}
+
+.project:hover {
+    border: 1px solid black;
+    border-radius: 3px;
 }
 
 /* ---- DEFAULT ---- */
