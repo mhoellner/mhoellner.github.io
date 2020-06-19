@@ -1,3 +1,24 @@
+/* ---- DEFAULT ---- */
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
+    padding-top: 3vh;
+}
+
+a,
+a:visited,
+a:link {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
 /* ---- HEADER ---- */
 .avatar {
     border-radius: 50%;
@@ -12,7 +33,7 @@
     text-align: center;
 }
 
-.interests {
+.centered {
     text-align: center;
 }
 
@@ -26,14 +47,6 @@
     content: "/";
 }
 
-.social-links {
-    text-align: center;
-}
-
-.social-links__item > a, a, a:visited {
-    color: black;
-}
-
 .social-links__item {
     list-style-type: none;
     display: list-item inline;
@@ -42,20 +55,19 @@
     font-size: 5em;
 }
 
+.social-links__item > a:hover {
+    background-color: unset;
+}
+
 .social-links__item > a:hover > i {
     background-color: black;
     color: white;
     text-decoration: unset;
     border-radius: 3px;
 }
-
-.social-links__item > a:hover {
-    text-decoration: unset;
-}
-
 /* ---- MAIN ---- */
 
-.paper-navigation {
+.navigation {
     border-top: black 1px solid;
     border-bottom: black 1px solid;
     border-radius: 3px;
@@ -72,15 +84,11 @@
     content: "\00a0]";
 }
 
-.paper-content {
+.content-box {
     padding: 5px;
 }
 
-.skill-list,
-.career-element,
-.certificate-list,
-.project-list,
-.contact-list {
+.content-box__content {
     padding-left: 2.5em;
 }
 
@@ -89,8 +97,7 @@
     margin-bottom: 15px;
 }
 
-.career-element_date,
-.certificate_date {
+.date {
     color: darkslategrey;
     font-style: italic;
 }
@@ -111,12 +118,9 @@
     padding: 0px 5px 5px 5px;
 }
 
-.navigation-link:hover,
-.career-element_place > a:hover,
-.contact_link:hover {
+.contact_link {
     background-color: black;
-    color: white;
-    text-decoration: unset;
+    color: black;
 }
 
 .project__link:hover > .project_title,
@@ -133,13 +137,4 @@
 .project:hover {
     border: 1px solid black;
     border-radius: 3px;
-}
-
-/* ---- DEFAULT ---- */
-
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 800px;
-    padding-top: 3vh;
 }
