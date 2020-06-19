@@ -1,0 +1,140 @@
+/* ---- DEFAULT ---- */
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
+    padding-top: 3vh;
+}
+
+a,
+a:visited,
+a:link {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+/* ---- HEADER ---- */
+.avatar {
+    border-radius: 50%;
+    height: 30%;
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+.name {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.centered {
+    text-align: center;
+}
+
+.interests__item {
+    display: list-item inline;
+    list-style-type: none;
+    font-size: larger;
+}
+
+.interests__item:not(:first-child)::before {
+    content: "/";
+}
+
+.social-links__item {
+    list-style-type: none;
+    display: list-item inline;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 5em;
+}
+
+.social-links__item > a:hover {
+    background-color: unset;
+}
+
+.social-links__item > a:hover > i {
+    background-color: black;
+    color: white;
+    text-decoration: unset;
+    border-radius: 3px;
+}
+/* ---- MAIN ---- */
+
+.navigation {
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+    font-size: larger;
+}
+
+.navigation-link::before {
+    content: "[\00a0";
+}
+
+.navigation-link::after {
+    content: "\00a0]";
+}
+
+.content-box {
+    padding: 5px;
+}
+
+.content-box__content {
+    padding-left: 2.5em;
+}
+
+.career-element:not(:last-child),
+.certificate:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.date {
+    color: darkslategrey;
+    font-style: italic;
+}
+
+.career-element_title,
+.certificate_title,
+.project_title {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.project {
+    width: 50%;
+}
+
+.project_title,
+.project_description {
+    padding: 0px 5px 5px 5px;
+}
+
+.contact_link {
+    background-color: black;
+    color: black;
+}
+
+.project__link:hover > .project_title,
+.project__link:hover > .project_description {
+    background-color: black;
+    color: white;
+    text-decoration: unset;
+}
+
+.project {
+    border: 1px solid transparent;
+}
+
+.project:hover {
+    border: 1px solid black;
+    border-radius: 3px;
+}

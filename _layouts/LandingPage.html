@@ -1,82 +1,213 @@
 <!DOCTYPE html>
 <html lang="de-DE">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Milan Höllner">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-        <title>
-            {{ page.title }}
-        </title>
-        <style>
-            .svg-icon {
-                width: 10%;
-                height: 10%;
-            }
 
-            .social-media-list > li {
-                display: list-item inline;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Milan Höllner">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/custom.css" | relative_url }}">
+    <link rel="stylesheet" href="/assets/vendors/@fortawesome/css/all.css">
+    <title>
+        {{ page.title }}
+    </title>
+</head>
 
-            .skills > li {
-                list-style-type: none;
-            }
-        </style>
-    </head>
-    <body>
-        <main class="page-content" aria-label="Content">
-            <div class="wrapper">
-                {{ content }}
-            </div>
-            <div class="wrapper">
-                <h3>
-                    Links
-                </h3>
-                <ul class="social-media-list">
-                    <li>
-                        <a rel="me" href="https://github.com/{{ site.github_username | cgi_escape | escape }}" title="@{{ site.github_username | escape }} on Github">
-                            <svg class="svg-icon grey" viewBox="0 0 20 20">
-                                <use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a rel="me" href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}" title="@{{ site.twitter_username | escape }} on Twitter">
-                            <svg class="svg-icon grey" viewBox="0 0 20 20">
-                                <use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="wrapper">
-                <h3>
-                    Skills
-                </h3>
-                <ul class="skills">
-                    <li>
+<body>
+    <div class="header">
+        <div class="container">
+            <img class="avatar" src="/assets/img/git-selfie.jpg">
+        </div>
+        <div class="container">
+            <h1 class="name">
+                Milan Höllner
+            </h1>
+        </div>
+        <div class="container">
+            <ul class="centered">
+                <li class="interests__item">
+                    Backend Developer
+                </li>
+                <li class="interests__item">
+                    Feminist
+                </li>
+                <li class="interests__item">
+                    Maker
+                </li>
+                <li class="interests__item">
+                    Climate Justice
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <ul class="centered">
+                <li class="social-links__item">
+                    <a href="https://github.com/{{ site.github_username | cgi_escape | escape }}"
+                        title="@{{ site.github_username | escape }} on Github">
+                        <i class="fab fa-github"></i></a>
+                </li>
+                <li class="social-links__item">
+                    <a href="https://gitlab.com/{{ site.gitlab_username | cgi_escape | escape }}"
+                        title="@{{ site.gitlab_username | escape }} on Gitlab">
+                        <i class="fab fa-gitlab"></i></a>
+                </li>
+                <li class="social-links__item">
+                    <a href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}"
+                        title="@{{ site.twitter_username | escape }} on Twitter">
+                        <i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <div>
+                <div class="navigation">
+                    <a class="navigation-link" href="#skills">Skills</a>
+                    <a class="navigation-link" href="#career">Werdegang</a>
+                    <a class="navigation-link" href="#projects">Projekte</a>
+                    <a class="navigation-link" href="#certificates">Zertifikate</a>
+                    <a class="navigation-link" href="#contact">Kontakt</a>
+                </div>
+                <div class="content-box">
+                    <h2 id="skills">
+                        <i class="fa fa-code fa-fw"></i>
+                        Skills
+                    </h2>
+                    <div class="content-box__content">
                         C# / .NET Framework / .NET Core / ASP.NET MVC
-                    </li>
-                    <li>
-                        Sitecore Experience Platform
-                    </li>
-                    <li>
-                        Sitecore Experience Commerce
-                    </li>
-                    <li>
-                        Git
-                    </li>
-                    <li>
+                        <br />
+                        Sitecore Experience Platform / Sitecore Experience Commerce
+                        <br />
+                        Version Control (git)
+                        <br />
                         Continuous Integration (Jetbrains TeamCity)
-                    </li>
-                    <li>
+                        <br />
                         Continuous Deployment (Octopus Deploy)
-                    </li>
-                    <li>
+                        <br />
                         Docker / Docker Compose
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h2 id="career">
+                        <i class="fa fa-briefcase fa-fw"></i>
+                        Werdegang
+                    </h2>
+                    <div class="content-box__content">
+                        <div class="career-element">
+                            <div class="date">
+                                <span class="career-element_date__from">
+                                    Jan. 2019
+                                </span>
+                                -
+                                <span class="career-element_date__to">
+                                    heute
+                                </span>
+                            </div>
+                            <div class="career-element_title">
+                                Developer
+                            </div>
+                            <div class="career-element_place">
+                                <a href="https://init.de/">]init[ AG für digitale Kommunikation</a>
+                            </div>
+                        </div>
+                        <div class="career-element">
+                            <div class="date">
+                                <span class="career-element_date__from">
+                                    Okt. 2015
+                                </span>
+                                -
+                                <span class="career-element_date__to">
+                                    Sep. 2018
+                                </span>
+                            </div>
+                            <div class="career-element_title">
+                                Dualstudent
+                            </div>
+                            <div class="career-element_place">
+                                <a href="https://init.de/">]init[ AG für digitale Kommunikation</a>
+                            </div>
+                        </div>
+                        <div class="career-element">
+                            <div class="date">
+                                <span class="career-element_date__from">
+                                    Okt. 2015
+                                </span>
+                                -
+                                <span class="career-element_date__to">
+                                    Sep. 2018
+                                </span>
+                            </div>
+                            <div class="career-element_title">
+                                Duales Studium Informatik (B. Sc.)
+                            </div>
+                            <div class="career-element_place">
+                                <a href="https://www.hwr-berlin.de/">Hochschule für Wirtschaft und Recht Berlin</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h2 id="projects">
+                        <i class="fa fa-file-code fa-fw"></i>
+                        Projekte
+                    </h2>
+                    <div class="content-box__content">
+                        <div class="project">
+                            <a class="project__link" target="_blank"
+                                href="https://devpost.com/software/safe-together-8t94q1">
+                                <div class="project_header">
+                                    <img alt="Coco - Your Quarantine Companion" src="/assets/img/coco-teaser.png">
+                                </div>
+                                <div class="project_title">
+                                    Coco - Your Quarantine Companion | #EUvsVirus
+                                </div>
+                                <div class="project_description">
+                                    Symptom tracker to improve the communication gap between health authority and
+                                    patients during their 14 days quarantine.
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h2 id="certificates">
+                        <i class="fa fa-certificate fa-fw"></i>
+                        Zertifikate
+                    </h2>
+                    <div class="content-box__content">
+                        <div class="certificate">
+                            <div class="date">
+                                <span>25. Juni 2019</span>
+                            </div>
+                            <div class="certificate_title">
+                                Sitecore 9.0 Certified Platform Associate Developer
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h2 id="contact">
+                        <i class="fa fa-address-card fa-fw"></i>
+                        Kontakt
+                    </h2>
+                    <div class="content-box__content">
+                        Twitter: <a class="contact_link" href="https://twitter.com/l1nu5_" target="_blank">@L1NU5_</a>
+                        <br />
+                        Instagram: <a class="contact_link" href="https://www.instagram.com/milan_hoellner/"
+                            target="_blank">milan_hoellner</a>
+                        <br />
+                        XING: <a class="contact_link" href="https://www.xing.com/profile/Milan_Hoellner"
+                            target="_blank">Milan Höllner</a>
+                        <br />
+                        E-Mail: <a class="contact_link"
+                            href="mailto:milan.hoellner@posteo.de">milan[.]hoellner[@]posteo[.]de</a>
+                    </div>
+                </div>
             </div>
-        </main>
-    </body>
+        </div>
+    </div>
+</body>
+
 </html>
