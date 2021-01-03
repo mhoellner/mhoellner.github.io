@@ -22,6 +22,8 @@ twitter_username: L1NU5_
 github_username:  mhoellner
 gitlab_username: mhoellner
 xing_username: Milan_Hoellner
+show_excerpts: true
+excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown
