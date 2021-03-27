@@ -35,3 +35,17 @@ a:hover {
 .centered {
     text-align: center;
 }
+
+footer {
+    padding-top: 20px;
+}
+
+/* CODE HIGHLIGHTING */
+pre.highlight {
+    border: 1px solid;
+    padding: 5px;
+}
+
+span.s {
+    color: darkorange;
+}

@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /index.html
+Allow: /2021/03/27/rider-with-docker-fastmode.html
 Disallow: /
