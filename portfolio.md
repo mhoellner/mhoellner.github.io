@@ -7,10 +7,13 @@ title: Portfolio
 
 ## Skills
 
-* C# / .NET Framework / .NET Core / ASP.NET MVC
+* C# / .NET Core / .NET Framework / ASP.NET MVC
+* Entity Framework Core / IdentityServer4 / Swagger
+* xunit / NUnit / Moq
+* MS SQL / PostgreSQL
 * Sitecore Experience Platform / Sitecore Experience Commerce
 * Version Control (git)
-* Continuous Integration (JetBrains TeamCity, Github Actions)
+* Continuous Integration (JetBrains TeamCity, Github Actions, Gitlab Runner)
 * Continuous Deployment (Octopus Deploy)
 * Docker / Docker Compose / OKD
 
