@@ -1,4 +1,4 @@
-FROM ruby:2.7.6-slim
+FROM ruby:2.7.7-slim
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc g++ make patch \
