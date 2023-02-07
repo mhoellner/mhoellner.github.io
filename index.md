@@ -8,15 +8,15 @@ title: Milan Höllner
 
 # Hi, my name is Milan and<br /> I'm a backend developer<br /> based in Berlin
 
-Get in touch with me through <a href="mailto:milan.hoellner@posteo.de">e-mail</a>.
+Get in touch with me through [e-mail](mailto:milan.hoellner@posteo.de).
 
 I use e-mail encryption with pgp and maybe you do, too?<br />
-Here's my <a href="https://keys.openpgp.org/search?q=milan.hoellner@posteo.de" target="_blank">public key</a>.
+Here's my [public key](https://keys.openpgp.org/search?q=milan.hoellner@posteo.de){:target="_blank"}.
 
 You can also find me on 
-<a href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}" target="_blank" title="@{{ site.twitter_username | escape }} on Twitter">twitter</a>, 
-<a href="https://www.xing.com/profile/{{ site.xing_username | cgi_escape | escape }}" target="_blank" title="@{{ site.xing_username | escape }} on XING">XING</a>, 
-<a href="https://gitlab.com/{{ site.gitlab_username | cgi_escape | escape }}" target="_blank" title="@{{ site.gitlab_username | escape }} on Gitlab">gitlab</a> and 
-<a href="https://github.com/{{ site.github_username | cgi_escape | escape }}" target="_blank" title="@{{ site.github_username | escape }} on Github">github</a>.
+[mastodon](https://{{ site.mastodon_server | cgi_escape | escape }}/@{{ site.mastodon_username | cgi_escape | escape }} "@{{ site.mastodon_username | escape }} on {{ site.mastodon_server | escape }}"){:target="_blank"}{:rel="me"}, 
+[XING](https://www.xing.com/profile/{{ site.xing_username | cgi_escape | escape }} "{{ site.xing_username | escape }} on XING"){:target="_blank"}, 
+[gitlab](https://gitlab.com/{{ site.gitlab_username | cgi_escape | escape }} "@{{ site.gitlab_username | escape }} on GitLab"){:target="_blank"} and 
+[github](https://github.com/{{ site.github_username | cgi_escape | escape }} "@{{ site.github_username | escape }} on GitHub"){:target="_blank"}.
 
 Have a look at my skills and development in my [portfolio](/portfolio).
