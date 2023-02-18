@@ -18,8 +18,8 @@ email: milan.hoellner@posteo.de
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-mastodon_username: l1nu5_
-mastodon_server: mastodon.online
+mastodon_username: mhoellner
+mastodon_server: hachyderm.io
 github_username:  mhoellner
 gitlab_username: mhoellner
 xing_username: Milan_Hoellner
