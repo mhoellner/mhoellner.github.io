@@ -5,7 +5,11 @@ title: Professional Career
 
 # Professional Career
 
-_Apr. 2021 - today_  
+_Apr. 2024 - today_  
+__Senior Developer__  
+[\]init\[ AG für digitale Kommunikation](https://init.de/)
+
+_Apr. 2021 - Mar. 2024_  
 __Professional Developer__  
 [\]init\[ AG für digitale Kommunikation](https://init.de/)
 
