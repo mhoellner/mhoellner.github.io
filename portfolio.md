@@ -16,6 +16,8 @@ title: Portfolio
 * Continuous Integration (JetBrains TeamCity, Github Actions, Gitlab Runner)
 * Continuous Deployment (Octopus Deploy, Argo CD)
 * Docker / Docker Compose / OKD / Kubernetes / Helm
+* Azure DevOps Server
+* Terraform / OpenTofu
 
 ## Certificates
 
